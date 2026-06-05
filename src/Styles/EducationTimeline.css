@@ -1,0 +1,207 @@
+.education-section {
+  width: 100%;
+
+  padding: 10px 80px 100px;
+}
+
+.education-header {
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.education-tag {
+  font-size: 2rem;
+
+  color: #777;
+
+  margin-bottom: 10px;
+}
+
+.education-title {
+  font-size: 3rem;
+
+  font-weight: 700;
+
+  color: #111;
+
+  position: relative;
+
+  display: inline-block;
+}
+
+.education-title::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 8px;
+
+  width: 100%;
+  height: 12px;
+ 
+  background-color: #f8c8ff;
+
+  z-index: -1;
+}
+
+.timeline {
+  position: relative;
+
+  max-width: 900px;
+
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+
+  top: 0;
+  bottom: 0;
+
+  width: 3px;
+
+  background-color: black;
+
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+
+  width: 50%;
+
+  margin-bottom: 50px;
+}
+
+.timeline-item.left {
+  padding-right: 35px;
+}
+
+.timeline-item.right {
+  margin-left: 50%;
+
+  padding-left: 35px;
+}
+
+.timeline-item::before {
+  content: "";
+
+  position: absolute;
+
+  width: 18px;
+  height: 18px;
+
+  border-radius: 50%;
+
+  background-color: #f8c8ff;
+
+  border: 2px solid black;
+
+  top: 18px;
+
+  z-index: 2;
+}
+
+.timeline-item.left::before {
+  right: -9px;
+}
+
+.timeline-item.right::before {
+  left: -9px;
+}
+
+.timeline-year {
+  display: inline-block;
+
+  padding: 6px 16px;
+
+  background-color: #f8c8ff;
+
+  border: 2px solid black;
+
+  border-radius: 999px;
+
+  font-weight: 600;
+
+  font-size: 0.9rem;
+
+  margin-bottom: 12px;
+
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.08);
+}
+
+.timeline-card {
+  background-color: white;
+
+  border: 2px solid black;
+
+  border-radius: 20px;
+
+  padding: 20px;
+
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s ease;
+}
+
+.timeline-card:hover {
+  transform: translateY(-4px);
+}
+
+.timeline-item.left .timeline-card {
+  transform: rotate(-0.7deg);
+}
+
+.timeline-item.right .timeline-card {
+  transform: rotate(0.7deg);
+}
+
+.timeline-card h3 {
+  font-size: 1.1rem;
+
+  color: #111;
+
+  margin-bottom: 10px;
+}
+
+.education-course {
+  font-size: 0.95rem;
+
+  font-weight: 500;
+
+  color: #444;
+
+  margin-bottom: 10px;
+}
+
+.timeline-card p {
+  font-size: 0.9rem;
+
+  line-height: 1.6;
+
+  color: #555;
+
+  margin-bottom: 6px;
+}
+
+.current-card {
+  background-color: rgba(248, 200, 255, 0.15);
+}
+
+.current-year {
+  background-color: #f8c8ff;
+}
+
+.current-status {
+  margin-top: 10px;
+
+  font-weight: 600;
+
+  color: #111;
+}
