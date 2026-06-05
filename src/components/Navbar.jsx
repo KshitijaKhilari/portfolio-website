@@ -18,15 +18,7 @@ function Navbar() {
         </li>
 
         <li>
-          <a href="#dsa">DSA</a>
-        </li>
-
-        <li>
           <a href="#contact">Contact</a>
-        </li>
-
-        <li>
-          <a href="#blog">Blog</a>
         </li>
 
       </ul>

@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react"
 import "../styles/Home.css"
 
 import heroImage from "../assets/kshitija.jpeg"
-
+import resumePDF from "../assets/Kshitija_Sandip_Khilari_Resume_.pdf"
 import arrow from "../assets/arrow.png"
 import star from "../assets/star.png"
 import smiley from "../assets/smiley.png"
@@ -69,6 +69,14 @@ function Home() {
           and creative web experiences.
         </p>
 
+        <a
+          href={resumePDF}
+          download
+          className="resume-button"
+        >
+          ⬇ Download Resume
+        </a>
+
       </div>
 
       <div className="hero-right">
@@ -84,9 +92,9 @@ function Home() {
               setShowConnect(!showConnect)
             }
           >
-             {showConnect
-                ? "↘ Let's Connect"
-                : "↗ Let's Connect"}
+            {showConnect
+              ? "↘ Let's Connect"
+              : "↗ Let's Connect"}
           </button>
 
           {showConnect && (
@@ -94,22 +102,22 @@ function Home() {
             <div className="connect-popup">
 
               <a
-  href="https://www.linkedin.com/in/kshitija-sandip-khilari/"
-  target="_blank"
-  rel="noreferrer"
->
-  <FaLinkedin />
-  LinkedIn
-</a>
+                href="https://www.linkedin.com/in/kshitija-sandip-khilari/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaLinkedin />
+                LinkedIn
+              </a>
 
-<a
-  href="https://github.com/KshitijaKhilari"
-  target="_blank"
-  rel="noreferrer"
->
-  <FaGithub />
-  GitHub
-</a>
+              <a
+                href="https://github.com/KshitijaKhilari"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithub />
+                GitHub
+              </a>
 
             </div>
 

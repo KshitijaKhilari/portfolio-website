@@ -1,11 +1,14 @@
-import "../Styles/About.css"
-import EducationTimeline from "../components/EducationTimeline"
+import "../styles/About.css"
 
 import aboutImage from "../assets/kshitija-AboutMe.jpeg"
+
+import EducationTimeline from "../components/EducationTimeline"
+import Skills from "../components/Skills"
 
 function About() {
   return (
     <>
+
       <section id="about" className="about-section">
 
         <div className="about-card">
@@ -49,6 +52,8 @@ function About() {
       </section>
 
       <EducationTimeline />
+
+      <Skills />
 
     </>
   )
