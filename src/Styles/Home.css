@@ -215,7 +215,13 @@
 
   font-weight: 600;
 
-  transition: 0.3s ease;
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  transition: all 0.25s ease;
 }
 
 .connect-popup a:hover {
@@ -234,4 +240,118 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+.connect-container {
+  position: absolute;
+
+  top: -120px;
+  right: 50px;
+
+  z-index: 1000;
+}
+
+.connect-popup svg {
+  font-size: 1.4rem;
+
+  width: 28px;
+
+  flex-shrink: 0;
+}
+
+.connect-button {
+  background-color: #f8c8ff;
+
+  border: 3px solid black;
+
+  border-radius: 16px;
+
+  padding: 12px 20px;
+
+  font-size: 1rem;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.15);
+
+  transition: all 0.3s ease;
+
+  transform: rotate(2deg);
+}
+
+.connect-button:hover {
+  transform: rotate(2deg) translateY(-4px);
+}
+
+.connect-popup {
+  margin-top: 12px;
+
+  background-color: white;
+
+  border: 3px solid black;
+
+  border-radius: 18px;
+
+  padding: 15px 20px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 12px;
+
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.15);
+
+  transform: rotate(-1deg);
+
+  animation: popupOpen 0.25s ease;
+}
+
+.connect-popup a {
+  text-decoration: none;
+
+  color: black;
+
+  font-weight: 600;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  width: 140px;
+
+  transition: all 0.25s ease;
+}
+
+.connect-popup a:hover {
+  transform: translateX(5px);
+
+  color: #444;
+}
+
+@keyframes popupOpen {
+
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(-10px)
+      scale(0.95)
+      rotate(-1deg);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0)
+      scale(1)
+      rotate(-1deg);
+  }
+
 }

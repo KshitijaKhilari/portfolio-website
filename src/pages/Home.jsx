@@ -1,4 +1,6 @@
-import { useState } from "react"
+import { FaLinkedin, FaGithub } from "react-icons/fa"
+import { useState, useRef, useEffect } from "react"
+
 import "../styles/Home.css"
 
 import heroImage from "../assets/kshitija.jpeg"
@@ -8,8 +10,42 @@ import star from "../assets/star.png"
 import smiley from "../assets/smiley.png"
 
 function Home() {
+
   const [showConnect, setShowConnect] = useState(false)
+
+  const popupRef = useRef(null)
+
+  useEffect(() => {
+
+    function handleClickOutside(event) {
+
+      if (
+        popupRef.current &&
+        !popupRef.current.contains(event.target)
+      ) {
+        setShowConnect(false)
+      }
+
+    }
+
+    document.addEventListener(
+      "mousedown",
+      handleClickOutside
+    )
+
+    return () => {
+
+      document.removeEventListener(
+        "mousedown",
+        handleClickOutside
+      )
+
+    }
+
+  }, [])
+
   return (
+
     <section id="home" className="hero-section">
 
       <div className="hero-left">
@@ -36,37 +72,50 @@ function Home() {
       </div>
 
       <div className="hero-right">
-        <div className="connect-container">
 
-  <button
-    className="connect-button"
-    onClick={() => setShowConnect(!showConnect)}
-  >
-    ↗ Let's Connect
-  </button>
+        <div
+          className="connect-container"
+          ref={popupRef}
+        >
 
-  {showConnect && (
-    <div className="connect-popup">
+          <button
+            className="connect-button"
+            onClick={() =>
+              setShowConnect(!showConnect)
+            }
+          >
+             {showConnect
+                ? "↘ Let's Connect"
+                : "↗ Let's Connect"}
+          </button>
 
-      <a
-        href="https://www.linkedin.com/in/kshitija-sandip-khilari/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        LinkedIn
-      </a>
+          {showConnect && (
 
-      <a
-        href="https://github.com/KshitijaKhilari"
-        target="_blank"
-        rel="noreferrer"
-      >
-        GitHub
-      </a>
-    </div>
-  )}
+            <div className="connect-popup">
 
-</div>
+              <a
+  href="https://www.linkedin.com/in/kshitija-sandip-khilari/"
+  target="_blank"
+  rel="noreferrer"
+>
+  <FaLinkedin />
+  LinkedIn
+</a>
+
+<a
+  href="https://github.com/KshitijaKhilari"
+  target="_blank"
+  rel="noreferrer"
+>
+  <FaGithub />
+  GitHub
+</a>
+
+            </div>
+
+          )}
+
+        </div>
 
         <div className="image-frame">
 
@@ -99,6 +148,7 @@ function Home() {
       </div>
 
     </section>
+
   )
 }
 
