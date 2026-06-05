@@ -4,6 +4,7 @@ function Skills() {
 
   const skills = [
     { name: "Java", color: "pink" },
+    { name: "Python", color: "blue" },
     { name: "SQL", color: "pink" },
     { name: "HTML", color: "pink" },
     { name: "CSS", color: "pink" },
