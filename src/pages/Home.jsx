@@ -59,7 +59,7 @@ function Home() {
           <br />
 
           <span className="highlight">
-            Kshitija Khilari.
+            Kshitija Sandip Khilari.
           </span>
         </h1>
 
