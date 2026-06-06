@@ -55,7 +55,7 @@ function Home() {
         </p>
 
         <h1 className="hero-title">
-          Myself
+          I am
           <br />
 
           <span className="highlight">
