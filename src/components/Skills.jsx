@@ -25,7 +25,7 @@ function Skills() {
       <div className="skills-header">
 
         <h2 className="skills-tag">
-          ✨ Skills & Technologies
+          Skills & Technologies
         </h2>
 
       </div>

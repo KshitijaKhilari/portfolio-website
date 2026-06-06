@@ -22,10 +22,10 @@ function ProjectsSection() {
                 "https://vendor-management-srco.onrender.com/",
 
             code:
-                "#",
+                "https://github.com/KshitijaKhilari/vendor-management",
 
             image:
-                "https://placehold.co/600x400"
+                "src/assets/vms.png"
         },
 
         {
@@ -44,10 +44,10 @@ function ProjectsSection() {
                 "#",
 
             code:
-                "#",
+                "https://github.com/KshitijaKhilari/portfolio-website",
 
             image:
-                "https://placehold.co/600x400"
+                "src/assets/portfolio-website.png"
         },
 
         {
@@ -66,10 +66,10 @@ function ProjectsSection() {
                 "https://timely-shortbread-5da588.netlify.app",
 
             code:
-                "#",
+                "https://timely-shortbread-5da588.netlify.app",
 
             image:
-                "https://placehold.co/600x400"
+                "src/assets/tourism.png"
         },
 
         {
@@ -88,10 +88,10 @@ function ProjectsSection() {
                 "https://musarrat-restaurant-replica.vercel.app/",
 
             code:
-                "#",
+                "https://github.com/KshitijaKhilari/musarrat-restaurant-replica",
 
             image:
-                "https://placehold.co/600x400"
+                "src/assets/musarrat-restaurant.png"
         }
 
     ]
@@ -143,7 +143,7 @@ function ProjectsSection() {
         >
 
             <h2 className="projects-title">
-                ✨ Projects
+                Projects
             </h2>
 
             <div className="projects-carousel">

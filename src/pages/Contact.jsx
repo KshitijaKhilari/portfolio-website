@@ -10,7 +10,7 @@ function Contact() {
         >
 
             <h2 className="contact-title">
-                ✨ Contact
+                Contact
             </h2>
 
             <div className="contact-card">
@@ -18,11 +18,18 @@ function Contact() {
                 <div className="contact-left">
 
                     <h3 className="contact-heading">
-                        Get In Touch
+                        Get In Touch ✨
                     </h3>
 
                     <p className="contact-email">
-                        📧 your-email@gmail.com
+                        📧
+                        <a
+                            href="https://mail.google.com/mail/?view=cm&fs=1&to=kshitijakhilari12@gmail.com"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            kshitijakhilari12@gmail.com
+                        </a>
                     </p>
 
                     <div className="contact-links">
@@ -60,7 +67,7 @@ function Contact() {
                         </a>
 
                         <a
-                            href="/Kshitija_Sandip_Khilari_Resume_.pdf"
+                            href="https://drive.google.com/file/d/1sCUkiVxy_3DcVJZNFP7RWSeD5Srou1Iu/view?usp=sharing"
                             target="_blank"
                             rel="noreferrer"
                             className="contact-button blue-button"

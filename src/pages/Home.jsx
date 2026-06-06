@@ -64,9 +64,11 @@ function Home() {
         </h1>
 
         <p className="hero-description">
-          A Computer Science Engineering student exploring
-          software engineering, DSA, backend development,
-          and creative web experiences.
+          📍 Smt. Indira Gandhi College of Engineering (SIGCE)
+          🎓 B.Tech. CSE [IoTCSBCT] (Third Year)<br></br>
+          ⭐ CGPA: 9.00 <br></br>
+          Exploring software engineering, backend development,
+          DSA, and creative web experiences.
         </p>
 
         <a

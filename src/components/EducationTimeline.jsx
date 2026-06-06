@@ -67,7 +67,7 @@ function EducationTimeline() {
             </p>
 
             <p>
-              Graduated with Distinction
+              Graduated with First Class Distinction
             </p>
 
           </div>
@@ -89,7 +89,7 @@ function EducationTimeline() {
             </h3>
 
             <p className="education-course">
-              B.E. Computer Science Engineering
+              B.Tech. Computer Science Engineering
             </p>
 
             <p>

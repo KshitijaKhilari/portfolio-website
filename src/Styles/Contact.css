@@ -7,8 +7,8 @@
 .contact-title {
   text-align: center;
 
-  font-size: 2.2rem;
-
+  font-size: 2.5rem;
+  font-weight: 600;
   margin-bottom: 50px;
 }
 
@@ -127,7 +127,7 @@
 
   padding: 30px;
 
-  transform: rotate(2deg);
+  /* transform: rotate(2deg); */
 
   flex-shrink: 0;
 }

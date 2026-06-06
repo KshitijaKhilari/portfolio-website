@@ -1,6 +1,7 @@
 #about {
   scroll-margin-top: 100px;
 }
+
 .about-section {
   width: 100%;
 
@@ -11,6 +12,15 @@
   gap: 50px;
 
   padding: 50px 100px 120px 80px;
+}
+
+.about-title {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 30px;
 }
 
 .about-card {

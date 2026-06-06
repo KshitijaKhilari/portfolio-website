@@ -8,7 +8,9 @@ import Skills from "../components/Skills"
 function About() {
   return (
     <>
-
+      <h2 className="about-title">
+        About Me
+      </h2>
       <section id="about" className="about-section">
 
         <div className="about-card">
@@ -24,9 +26,7 @@ function About() {
           </h2>
 
           <p className="about-description">
-            I’m currently pursuing Computer Science Engineering
-            and exploring software engineering through projects,
-            frontend development, backend systems, and DSA.
+            I’m currently pursuing Computer Science Engineering and exploring software engineering through projects, frontend development, backend systems, and DSA. I have a particular interest in databases and enjoy designing structured data systems, with a strong foundation in SQL.
           </p>
 
         </div>
