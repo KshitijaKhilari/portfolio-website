@@ -1,4 +1,4 @@
-import "../styles/EducationTimeline.css"
+import "../Styles/EducationTimeline.css"
 
 function EducationTimeline() {
   return (

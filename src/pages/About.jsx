@@ -1,4 +1,4 @@
-import "../styles/About.css"
+import "../Styles/About.css"
 
 import aboutImage from "../assets/kshitija-AboutMe.jpeg"
 

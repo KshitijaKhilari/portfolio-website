@@ -1,7 +1,7 @@
 import { FaLinkedin, FaGithub } from "react-icons/fa"
 import { useState, useRef, useEffect } from "react"
 
-import "../styles/Home.css"
+import "../Styles/Home.css"
 
 import heroImage from "../assets/kshitija.jpeg"
 import resumePDF from "../assets/Kshitija_Sandip_Khilari_Resume_.pdf"

@@ -1,6 +1,11 @@
 import { useState } from "react"
 
-import "../styles/Projects.css"
+import "../Styles/Projects.css"
+
+import vmsImage from "../assets/vms.png"
+import portfolioImage from "../assets/portfolio-website.png"
+import tourismImage from "../assets/tourism.png"
+import musarratImage from "../assets/musarrat-restaurant.png"
 
 function ProjectsSection() {
 
@@ -25,7 +30,7 @@ function ProjectsSection() {
                 "https://github.com/KshitijaKhilari/vendor-management",
 
             image:
-                "src/assets/vms.png"
+                vmsImage
         },
 
         {
@@ -47,7 +52,7 @@ function ProjectsSection() {
                 "https://github.com/KshitijaKhilari/portfolio-website",
 
             image:
-                "src/assets/portfolio-website.png"
+                portfolioImage
         },
 
         {
@@ -69,7 +74,7 @@ function ProjectsSection() {
                 "https://timely-shortbread-5da588.netlify.app",
 
             image:
-                "src/assets/tourism.png"
+                tourismImage
         },
 
         {
@@ -91,7 +96,7 @@ function ProjectsSection() {
                 "https://github.com/KshitijaKhilari/musarrat-restaurant-replica",
 
             image:
-                "src/assets/musarrat-restaurant.png"
+                musarratImage
         }
 
     ]
