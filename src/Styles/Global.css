@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+
+}
+
+body {
+	overflow-x: hidden;
+	line-height: 1.6;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}

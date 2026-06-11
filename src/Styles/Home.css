@@ -8,18 +8,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 
   gap: 80px;
 
   padding: 100px 150px 120px 100px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .hero-left {
   flex: 1;
+  min-width: 0;
 }
 
 .hero-greeting {
-  font-size: 2.2rem;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
 
   margin-bottom: 10px;
 
@@ -27,7 +31,7 @@
 }
 
 .hero-title {
-  font-size: 3.5rem;
+  font-size: clamp(2.4rem, 5vw, 3.5rem);
   font-weight: 600;
 
   line-height: 1.05;
@@ -66,7 +70,8 @@
 }
 
 .hero-description {
-  width: 450px;
+  width: 100%;
+  max-width: 560px;
 
   font-size: 1.05rem;
 
@@ -77,6 +82,7 @@
 
 .hero-right {
   flex: 1;
+  min-width: 0;
 
   display: flex;
   justify-content: center;
@@ -86,8 +92,9 @@
 }
 
 .image-frame {
-  width: 280px;
-  height: 360px;
+  width: min(100%, 320px);
+  aspect-ratio: 280 / 360;
+  height: auto;
 
   transform: rotate(-2deg);
 
@@ -114,7 +121,7 @@
 }
 
 .smiley-sticker {
-  width: 80px;
+  width: clamp(56px, 10vw, 80px);
 
   position: absolute;
 
@@ -127,7 +134,7 @@
 }
 
 .star-sticker {
-  width: 70px;
+  width: clamp(52px, 9vw, 70px);
 
   position: absolute;
 
@@ -140,7 +147,7 @@
 }
 
 .arrow-doodle {
-  width: 60px;
+  width: clamp(44px, 8vw, 60px);
 
   position: absolute;
 
@@ -387,4 +394,68 @@
   transform: rotate(-1deg) translateY(-4px);
 
   box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.18);
+}
+@media (max-width: 768px) {
+
+  .hero-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    padding: 92px 20px 72px;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 100%;
+  }
+
+  .hero-description {
+    max-width: none;
+    font-size: 0.98rem;
+  }
+
+  .hero-right {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .connect-container {
+    position: static;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    top: auto;
+    right: auto;
+  }
+
+  .connect-popup {
+    width: min(100%, 240px);
+  }
+
+  .image-frame {
+    width: min(100%, 320px);
+  }
+
+  .smiley-sticker {
+    width: 58px;
+    left: -28px;
+    top: 24px;
+  }
+
+  .star-sticker {
+    width: 52px;
+    right: -18px;
+    bottom: -18px;
+  }
+
+  .arrow-doodle {
+    display: none;
+  }
+
+  .resume-button {
+    width: 100%;
+    text-align: center;
+  }
+
 }

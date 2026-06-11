@@ -67,3 +67,61 @@
 .nav-links li:hover::after {
   width: 100%;
 }
+
+.hamburger {
+  display: none;
+
+  font-size: 2rem;
+
+  cursor: pointer;
+
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+
+  .navbar {
+    justify-content: flex-end;
+
+    padding: 20px;
+  }
+
+  .hamburger {
+    display: block;
+
+    color: black;
+
+    z-index: 1001;
+  }
+
+  .nav-links {
+    position: fixed;
+
+    top: 0;
+    right: -100%;
+
+    width: 250px;
+    height: 100vh;
+
+    background-color: white;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 35px;
+
+    transition: 0.3s ease;
+
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-links li a {
+    font-size: 1.1rem;
+  }
+
+}

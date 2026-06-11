@@ -23,3 +23,6 @@ body {
 
   background-size: 32px 32px;
 }
+@media (max-width: 768px) {
+
+}

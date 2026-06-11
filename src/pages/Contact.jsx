@@ -1,5 +1,6 @@
 import "../styles/Contact.css"
 import { FaLinkedin, FaGithub } from "react-icons/fa"
+import resumePDF from "../assets/Kshitija_Sandip_Khilari_Resume_.pdf"
 function Contact() {
 
     return (
@@ -59,7 +60,7 @@ function Contact() {
                     <div className="resume-actions">
 
                         <a
-                            href="/Kshitija_Sandip_Khilari_Resume_.pdf"
+                            href={resumePDF}
                             download
                             className="contact-button blue-button"
                         >
