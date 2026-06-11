@@ -1,4 +1,4 @@
-import "../styles/Contact.css"
+import "../Styles/Contact.css"
 import { FaLinkedin, FaGithub } from "react-icons/fa"
 import resumePDF from "../assets/Kshitija_Sandip_Khilari_Resume_.pdf"
 function Contact() {
