@@ -68,7 +68,7 @@ function Contact() {
                         </a>
 
                         <a
-                            href="https://drive.google.com/file/d/1sCUkiVxy_3DcVJZNFP7RWSeD5Srou1Iu/view?usp=sharing"
+                            href="https://drive.google.com/file/d/1GBz3md1wlBlZfdsJ-HCKXarKrhbAqD3L/view?usp=sharing"
                             target="_blank"
                             rel="noreferrer"
                             className="contact-button blue-button"
